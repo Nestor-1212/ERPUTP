@@ -13,12 +13,6 @@ header{
     background: #1337d8;
 }
 
-.usu 
-{ 
-     color: #020202; 
-      font-size: 20px; 
-}
-
 .menu{
     width: 100%;
     height: 50px;
@@ -29,6 +23,13 @@ header{
 .menu ul{
     display: flex;
     margin: auto;
+}
+
+.usu 
+{ 
+     color: #020202; 
+      font-size: 20px; 
+
 }
 
 .menu li{
@@ -113,40 +114,3 @@ header{
     justify-content: center;
     align-items: center;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
