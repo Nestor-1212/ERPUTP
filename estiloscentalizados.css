@@ -1,0 +1,50 @@
+*{
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html body{
+  height:100%;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+}
+  
+  .form {
+    width:95%;
+    margin:20px auto;
+  }
+  table thead {
+    color: #fff;
+    background-color: #308446;
+  }
+  .container-xl
+  { background:#ffffff;    
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height:120vh;
+  
+  }
+  .container
+  { background:#ffffff;    
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height:45vh;
+  
+  }
+  table {
+    border: green 2px solid;
+    
+  }
+ 
+  body {         
+   
+    
+      background:#d0d0d0;
+  
+  }

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link  rel="stylesheet"  href="estilos.css"></link>  
+
+  <link rel="stylesheet" href="estiloscentalizados.css">
+  </link>
+
+</head>
+
+
+<header>
+  <div class="menu_bar">
+    <a href="#" class="bt-menu"><span class="icon-list2"></span>Menú</a>
+  </div>
+
+  <nav>
+    <ul> 
+
+      <li class="submenu">
+        <a href="#"><span class="icon-rocket"></span><span class="fas fa-address-book"></span>Registro</a>
+        <ul class="children">
+          <li><a href="#RegistroCaja.html">Registo de Gerente<span class="icon-dot"></span></a></li>					
+        <!-- 	<li><a href="#">SubElemento #3 <span class="icon-dot"></span></a></li> -->
+        </ul>
+      </li>
+      <li><a href="#"><span class="fas fa-book-reader"></span>Declaracion de Caja</a></li>
+      <li><a href="#"><span class="fas fa-file-invoice-dollar"></span>Alivio</a></li> 
+    
+      <li><a href="#"><span class="fas fa-archive"></span>Cajeras Del Dia</a></li> 
+      <li><a href="#" id="Salir"><span class="fas fa-sign-out-alt" ></span>Salir</a></li> 
+
+    </ul>
+  </nav>
+</header> 
+<body>
+
+
+
+
+  <br>
+  <div class="container-xl">
+    <br>
+    <form>
+      <div class="form-row">
+
+        <div class="col-sm-4">
+          <td><b># ARQUEO</b></td>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-list-ol"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="A00001" ReadOnly="true">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <td><b>FECHA ACTUAL DE ARQUEO</b></td>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+            </div>
+            <input type="password" class="form-control" ReadOnly="true" placeholder="20/05/2021">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <td><b>RESTAURANTE</b></td>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-utensils"></i></span>
+            </div>
+            <input type="password" class="form-control" ReadOnly="true" placeholder="PRUEBA UTP">
+          </div>
+        </div>
+      </div>
+      <br>
+
+
+      <div class="form-row">
+
+        <div class="col-sm-4">
+          <td><b>HORA ACTUAL DE ARQUEO</b></td>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-hourglass-half"></i></span>
+            </div>
+            <input type="password" class="form-control" ReadOnly="true" placeholder="12:00 PM">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <td><b>PERFIL</b></td>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control" ReadOnly="true" placeholder="SUPERVISOR">
+          </div>
+        </div>
+        <div class="col-sm-4">
+
+          <td><b>ENCARGADO</b></td>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="NESTOR ORTEGA" ReadOnly="true">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="form-row">
+
+        <div class="col-sm-8">
+
+          <td><b>COMENTARIOS</b></td>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-marker"></i></span>
+            </div>
+            <input type="text" class="form-control">
+          </div>       
+         
+        </div>
+
+
+        <div class="col-sm-4">
+          <br>
+          <button type="button" id="BtnNuevoRegistro" class="btn btn-success">NUEVO REGSITRO</button>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+      <h2>Ingreso de caja</h2>
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <table class="table table-responsive">
+
+        </div>
+        <thead>
+          <tr>
+            <th>BILLETES</th>
+            <th>CANTIDAD</th>
+            <th>TOTAL</th>
+            <th>ROLLOS</th>
+            <th>CANTIDAD</th>
+            <th>TOTAL</th>
+            <th>MONEDAS</th>
+            <th>CANTIDAD</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <tr>
+            <td><b>100</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" desable="True" ReadOnly="true" class="form-control"></td>
+            <td><b>1.00</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>1.00</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+          </tr>
+
+          <tr>
+            <td><b>50</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>0.50</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>0.50</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+          </tr>
+          <tr>
+            <td><b>20</b></td>
+
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>0.25</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>0.25</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+          </tr>
+          <tr>
+            <td><b>10</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>0.10</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>0.10</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+          </tr>
+
+          <tr>
+            <td><b>5</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>0.05</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>0.05</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+          </tr>
+
+          <tr>
+            <td><b>1</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>0.01</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+            <td><b>0.01</b></td>
+            <td><input type="text" size="5" AutoCompleteType="Disabled" class="form-control"></td>
+            <td><input type="text" size="5" ReadOnly="true" class="form-control"></td>
+          </tr>
+          <tr>
+            <td><b></b></td>
+            <td><b>TOTAL DE BILLETES</b></td>
+            <td><input type="text" size="15" ReadOnly="true" class="form-control"></td>
+            <td><b></b></td>
+            <td><b>TOTAL DE ROLLOS</b></td>
+            <td><input type="text" size="15" ReadOnly="true" class="form-control"></td>
+
+            <td><b></b></td>
+            <td><b>TOTAL DE MONEDAS</b></td>
+            <td><input type="text" size="15" ReadOnly="true" class="form-control"></td>
+          </tr>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+      <div class="container">
+
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col-sm-3">
+
+            <td><b>TOTAL EFECTIVO</b></td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+              </div>
+             <input type="text" class="form-control">
+            </div>           
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col-sm-3">
+            <td><b>RECIBO CAJA MENUDA</b></td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+              </div>
+             <input type="text" class="form-control">
+            </div>          
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col-sm-3">
+            <td><b>TOTAL DE FONDO FIJO</b></td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+              </div>
+             <input type="text" class="form-control">
+            </div>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col-sm-3">
+
+            <td><b>DIFERENCIA FONDO FIJO</b></td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+              </div>
+             <input type="text" class="form-control">
+            </div>  
+
+           </div>
+        </div>
+        <br>
+
+
+        
+        <div class="row">
+         
+          <div class="col">
+            <button type="button" class="btn btn-primary"><i class="fas fa-print"></i>              
+              IMRIMIR             
+            </button>           
+            
+            </div>
+          <div class="col"><button type="button"  ID="BtnIngresarMontos" class="btn btn-info"><i class="fas fa-edit"></i> INGRESAR MONTOS CAJAS
+            </button></div>
+          <div class="col-sm-3">
+          </div>
+          <div class="col"><button type="button" class="btn btn-success"><i class="fas fa-save"></i> GUARDAR</button></div>
+
+        </div>
+      </div>
+  </div>
+
+  </div>
+  <script src="Llamados.js"></script>
+
+
+</body>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Ingrese los montos de cada caja, de ser los correctos solo
+          precionar en el boton de Guradar.</h4> a
+
+      </div>
+
+
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label"><b>CAJA1:</b></label>
+            <input type="text" class="form-control" id="recipient-name" value="400.00">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label"><b>CAJA2:</b></label>
+            <input type="text" class="form-control" id="recipient-name" value="400.00">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label"><b>CAJA3:</b></label>
+            <input type="text" class="form-control" id="recipient-name" value="400.00">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label"><b>CAJA4:</b></label>
+            <input type="text" class="form-control" id="recipient-name" value="400.00">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label"><b>CAJA5:</b></label>
+            <input type="text" class="form-control" id="recipient-name" value="400.00">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label"><b>CAJA6:</b></label>
+            <input type="text" class="form-control" id="recipient-name" value="400.00">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label"><b>CAJA7:</b></label>
+            <input type="number" class="form-control" id="recipient-name" value="400.00">
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" data-dismiss="modal">GUARDAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+    
+
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <b>Estas realmente seguro de ingresas un nuevo registro!!!!!!</b>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" data-dismiss="modal">Aceptar</button>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+</html>
